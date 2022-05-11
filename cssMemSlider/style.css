@@ -11,7 +11,8 @@ body {
     width: 1000px;
     height: 500px;
     overflow: hidden;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 7px;
 }
 
 .main {
@@ -21,23 +22,39 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.sub-nav {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+
+.sub {
+    display: flex;
+    border: 1px solid green;
+}
+
+.sub-text {
+    color: white;
+    border: 1px solid white;
+}
+
 .nav {
     display: flex;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    align-self: flex-end;
+    border: 1px solid blue;
 }
 
 .bar {
+    display: flex;
     height: 15px;
-    width: 50px;
-    margin: 6px;
+    width: 15px;
+    margin: 5px;
     cursor: pointer;
     background-color: red;
     opacity: 0.5;
     border-radius: 10px;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 .bar:hover {
