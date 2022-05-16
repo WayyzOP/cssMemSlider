@@ -8,38 +8,48 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <div class="h-text">
+            CSS <span>Meme</span> Slider
+        </div>
     </header>
 
     <main>
         <div class="slider main">
             <div class="slides">
 
-                <input type="radio" name="slide" id="sl-1">
+                <input type="radio" name="slide" id="sl-1" checked>
                 <input type="radio" name="slide" id="sl-2">
                 <input type="radio" name="slide" id="sl-3">
                 <input type="radio" name="slide" id="sl-4">
 
-                <slide><img src="" alt=""></slide>
-                <slide><img src="" alt=""></slide>
-                <slide><img src="" alt=""></slide>
-                <slide><img src="" alt=""></slide>
+                <div class="slide-box sb-1"><img src="./assets/r1.png" alt=""></div>
+                <div class="slide-box"><img src="./assets/r2.png" alt=""></div>
+                <div class="slide-box"><img src="./assets/r3.png" alt=""></div>
+                <div class="slide-box"><img src="./assets/inq.png" alt=""></div>
 
             </div>
 
             <div class="sub-nav">
                 <div class="sub">
-                    <div class="sub-text">text1</div>
-                    <div class="sub-text">text2</div>
-                    <div class="sub-text">text3</div>
-                    <div class="sub-text">text4</div>
+                    <div class="sub-text st-1">Random text for meme 1</div>
+                    <div class="sub-text">Much more random text for meme 2</div>
+                    <div class="sub-text">Absolutely randomized text for meme 3</div>
+                    <div class="sub-text">Nobody expects the spanish inquisition!</div>
                 </div>
                 <div class="nav">
-                    <label for="sl-1" class="bar"></label>
-                    <label for="sl-2" class="bar"></label>
-                    <label for="sl-3" class="bar"></label>
-                    <label for="sl-4" class="bar"></label>
+                    <label for="sl-1" class="bar">
+                        <span class="marker marker-1"></span>
+                    </label>
+                    <label for="sl-2" class="bar">
+                        <span class="marker marker-2"></span>
+                    </label>
+                    <label for="sl-3" class="bar">
+                        <span class="marker marker-2"></span>
+                    </label>
+                    <label for="sl-4" class="bar">
+                        <span class="marker marker-2"></span>
+                    </label>
                 </div>
             </div>
             
@@ -47,8 +57,8 @@
         </div>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="f-text"></div>
     </footer>
 </body>
 </html>
