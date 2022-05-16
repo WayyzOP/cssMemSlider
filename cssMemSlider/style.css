@@ -61,19 +61,19 @@ input[name="slide"] {
     height: 100%;
 }
 
-.sub-nav {
+.subtitle-navigation {
     display: flex;
     padding: 0 1rem;
 }
 
-.sub {
+.subtitle {
     width: 400%;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 
-.sub-text {
+.subtitle-text {
     width: 100%;
     min-width: 100%;
     display: flex;
@@ -83,7 +83,7 @@ input[name="slide"] {
     color: white;
 }
 
-.nav {
+.navigation {
     display: flex;
 }
 
@@ -116,21 +116,6 @@ input[name="slide"] {
 
 
 /*RADIO INPUTS*/
-#sl-1:checked ~ .sub-nav .nav .bar .marker-1,
-#sl-1:checked ~ .sub-nav .nav .bar .marker-2,
-#sl-1:checked ~ .sub-nav .nav .bar .marker-3,
-#sl-1:checked ~ .sub-nav .nav .bar .marker-4 {
-    background-color: #FF6427;
-    border: 0.1rem solid #732100;
-}
-
-#sl-1:checked ~ .sub-nav .nav .bar:active .marker-1,
-#sl-1:checked ~ .sub-nav .nav .bar:active .marker-2,
-#sl-1:checked ~ .sub-nav .nav .bar:active .marker-3,
-#sl-1:checked ~ .sub-nav .nav .bar:active .marker-4 {
-    background-color: #FFCA7A;
-}
-
 #sl-1:checked ~ .sb-1 {
     margin-left: 0;
 }
@@ -147,15 +132,30 @@ input[name="slide"] {
     margin-left: -75%;
 }
 
-#sl-1:checked ~ .sub-nav .sub .sub-text {
+#sl-1:checked ~ .subtitle-text {
     transform: translateX(0);
 }
-#sl-2:checked ~ .sub-nav .sub .sub-text {
+#sl-2:checked ~ .subtitle-text {
     transform: translateX(-100%);
 }
-#sl-3:checked ~ .sub-nav .sub .sub-text {
+#sl-3:checked ~ .subtitle-text {
     transform: translateX(-200%);
 }
-#sl-4:checked ~ .sub-nav .sub .sub-text {
+#sl-4:checked ~ .subtitle-text {
     transform: translateX(-300%);
+}
+
+#sl-1:checked ~ .marker-1,
+#sl-2:checked ~ .marker-2,
+#sl-3:checked ~ .bar .marker-3,
+#sl-4:checked ~ .bar .marker-4 {
+    background-color: #FF6427;
+    border: 0.1rem solid #732100;
+}
+
+#sl-1:checked ~ .bar:active .marker-1,
+#sl-2:checked ~ .bar:active .marker-2,
+#sl-3:checked ~ .bar:active .marker-3,
+#sl-4:checked ~ .bar:active .marker-4 {
+    background-color: #FFCA7A;
 }
