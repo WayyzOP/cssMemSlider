@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cssMemSlider</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,42 +16,51 @@
 
     <main>
         <div class="slider main">
-            <div class="slides">
-
-                <input type="radio" name="slide" id="sl-1" checked>
-                <input type="radio" name="slide" id="sl-2">
-                <input type="radio" name="slide" id="sl-3">
-                <input type="radio" name="slide" id="sl-4">
-
-                <div class="slide-box sb-1"><img src="./assets/r1.png" alt=""></div>
-                <div class="slide-box"><img src="./assets/r2.png" alt=""></div>
-                <div class="slide-box"><img src="./assets/r3.png" alt=""></div>
-                <div class="slide-box"><img src="./assets/inq.png" alt=""></div>
-
+            <input type="radio" name="slide" id="sl-1" checked>
+            <input type="radio" name="slide" id="sl-2">
+            <input type="radio" name="slide" id="sl-3">
+            <input type="radio" name="slide" id="sl-4">
+            
+            <div class="slider-cont">
+                <div class="slides">    
+                    <div class="slide-box sb-1"><img src="./assets/r1.png" alt="meme1"></div>
+                    <div class="slide-box"><img src="./assets/r2.png" alt="meme2"></div>
+                    <div class="slide-box"><img src="./assets/r3.png" alt="meme3"></div>
+                    <div class="slide-box"><img src="./assets/inq.png" alt="meme4"></div>
+                </div>
+                <div class="subtitle-navigation">
+                    <div class="subtitle">
+                        <div class="subtitle-text st-1">
+                            Random text for meme 1
+                        </div>
+                        <div class="subtitle-text st-2">
+                            Much more random text for meme 2
+                        </div>
+                        <div class="subtitle-text st-3">
+                            Absolutely randomized text for meme 3
+                        </div>
+                        <div class="subtitle-text st-4">
+                            Nobody expects the spanish inquisition!
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="sl-1" class="bar">
+                            <span class="marker marker-1"></span>
+                        </label>
+                        <label for="sl-2" class="bar">
+                            <span class="marker marker-2"></span>
+                        </label>
+                        <label for="sl-3" class="bar">
+                            <span class="marker marker-3"></span>
+                        </label>
+                        <label for="sl-4" class="bar">
+                            <span class="marker marker-4"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
 
-            <div class="subtitle-navigation">
-                <div class="subtitle">
-                    <div class="subtitle-text st-1">Random text for meme 1</div>
-                    <div class="subtitle-text">Much more random text for meme 2</div>
-                    <div class="subtitle-text">Absolutely randomized text for meme 3</div>
-                    <div class="subtitle-text">Nobody expects the spanish inquisition!</div>
-                </div>
-                <div class="navigation">
-                    <label for="sl-1" class="bar">
-                        <span class="marker marker-1"></span>
-                    </label>
-                    <label for="sl-2" class="bar">
-                        <span class="marker marker-2"></span>
-                    </label>
-                    <label for="sl-3" class="bar">
-                        <span class="marker marker-3"></span>
-                    </label>
-                    <label for="sl-4" class="bar">
-                        <span class="marker marker-4"></span>
-                    </label>
-                </div>
-            </div>
+            
         </div>
     </main>
     <footer class="footer">

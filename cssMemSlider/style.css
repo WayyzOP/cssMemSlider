@@ -32,6 +32,7 @@ body {
     overflow: hidden;
     border: 2px solid white;
     border-radius: 7px;
+    padding: 1rem;
 }
 
 .main {
@@ -63,7 +64,7 @@ input[name="slide"] {
 
 .subtitle-navigation {
     display: flex;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 
 .subtitle {
@@ -79,8 +80,9 @@ input[name="slide"] {
     display: flex;
     align-items: center;
     transition: all 0.6s;
-    transform: translateX(0);
     color: white;
+    font-size: 1.5rem;
+    padding: 0.2rem;
 }
 
 .navigation {
@@ -94,8 +96,8 @@ input[name="slide"] {
 
 .marker {
     display: block;
-    width: 1rem;
-    height: 1rem;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 50%;
     background-color: red;
     border: 0.1rem solid #FFAE8E;
@@ -116,46 +118,48 @@ input[name="slide"] {
 
 
 /*RADIO INPUTS*/
-#sl-1:checked ~ .sb-1 {
+#sl-1:checked ~ .slider-cont .slides .sb-1 {
     margin-left: 0;
 }
 
-#sl-2:checked ~ .sb-1 {
+#sl-2:checked ~ .slider-cont .slides .sb-1 {
     margin-left: -25%;
 }
 
-#sl-3:checked ~ .sb-1 {
+#sl-3:checked ~ .slider-cont .slides .sb-1 {
     margin-left: -50%;
 }
 
-#sl-4:checked ~ .sb-1 {
+#sl-4:checked ~ .slider-cont .slides .sb-1 {
     margin-left: -75%;
 }
 
-#sl-1:checked ~ .subtitle-text {
+#sl-1:checked ~ .slider-cont .subtitle-navigation .subtitle .subtitle-text {
     transform: translateX(0);
 }
-#sl-2:checked ~ .subtitle-text {
+#sl-2:checked ~ .slider-cont .subtitle-navigation .subtitle .subtitle-text {
     transform: translateX(-100%);
 }
-#sl-3:checked ~ .subtitle-text {
+#sl-3:checked ~ .slider-cont .subtitle-navigation .subtitle .subtitle-text {
     transform: translateX(-200%);
 }
-#sl-4:checked ~ .subtitle-text {
+#sl-4:checked ~ .slider-cont .subtitle-navigation .subtitle .subtitle-text {
     transform: translateX(-300%);
 }
 
-#sl-1:checked ~ .marker-1,
-#sl-2:checked ~ .marker-2,
-#sl-3:checked ~ .bar .marker-3,
-#sl-4:checked ~ .bar .marker-4 {
-    background-color: #FF6427;
+#sl-1:checked ~ .slider-cont .navigation .bar .marker-1,
+#sl-2:checked ~ .slider-cont .navigation .bar .marker-2,
+#sl-3:checked ~ .slider-cont .navigation .bar .marker-3,
+#sl-4:checked ~ .slider-cont .navigation .bar .marker-4 {
+    background-color: #FFCA7A;
     border: 0.1rem solid #732100;
+    transform: scale(1.25);
+    opacity: 0.9;
 }
 
-#sl-1:checked ~ .bar:active .marker-1,
-#sl-2:checked ~ .bar:active .marker-2,
-#sl-3:checked ~ .bar:active .marker-3,
-#sl-4:checked ~ .bar:active .marker-4 {
+#sl-1:checked ~ .slider-cont .navigation .bar:active .marker-1,
+#sl-2:checked ~ .slider-cont .navigation .bar:active .marker-2,
+#sl-3:checked ~ .slider-cont .navigation .bar:active .marker-3,
+#sl-4:checked ~ .slider-cont .navigation .bar:active .marker-4 {
     background-color: #FFCA7A;
 }
